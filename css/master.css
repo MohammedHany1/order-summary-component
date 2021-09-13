@@ -5,7 +5,6 @@ body{
 }
 .container{
     width: 1440px;
-    height: 850px;
     background: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -146,10 +145,24 @@ footer{
     text-decoration: none;
 }
 
+@media (max-width: 374px){
+    .container{
+        width: 100%;
+    }
+    article{
+        width: 80%;        
+        height: 300px;
+        font-size: smaller;
+    }
+    section> h1{
+        font-size: 20px;
+    }
+
+}
+
 @media (min-width: 375px){
     .container{
         width: 100%;
-        height: 850px;
     }
     article{
         width: 80%;
@@ -159,9 +172,42 @@ footer{
     }
 }
 
+@media (min-width: 600px){
+    .container{
+        width: 100%;
+    }
+    article{
+        width: 70%;
+    }
+    section> h1{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 800px){
+    .container{
+        width: 100%;
+    }
+    article{
+        width: 50%;
+    }
+    section> h1{
+        font-size: 20px;
+    }
+}
+
 @media (min-width: 900px) {
     section> h1{
         font-size: 30px;
+    }
+    article{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1000px){
+    article{
+        width: 40%;
     }
 }
 
