@@ -1,11 +1,12 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+    background: url(../images/pattern-background-desktop.svg);
 }
 .container{
     width: 1440px;
-    background: url(../images/pattern-background-desktop.svg);
+
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
